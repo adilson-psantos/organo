@@ -1,6 +1,6 @@
 import './Banner.css'
 
-function Banner() {
+export const Banner = () => {
     //JSX É COMO O REACT LÊ O TRECHO DE CÓDIGO ABAIXO , PARACE HTML MAS NÃO É
     return(
         <header className = "banner">
@@ -9,4 +9,3 @@ function Banner() {
     )
 }
 
-export default Banner
