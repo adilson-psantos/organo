@@ -1,6 +1,6 @@
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
-import '../Formulario'
+import './Formulario.css'
 import Botao from '../Botao'
 
 const Formulario = () => {
@@ -24,11 +24,13 @@ const Formulario = () => {
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar o card do Colaborador</h2>
-                <CampoTexto obritatorio ={true} label="Nome" placeholder="Digite seu nome"/>
-                <CampoTexto obritatorio ={true} label="Cargo" placeholder = "Digite seu cargo"/>
+                <CampoTexto obritatorio={true} label="Nome" placeholder="Digite seu nome"/>
+                <CampoTexto obritatorio={true} label="Cargo" placeholder = "Digite seu cargo"/>
                 <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem"/>
-                <ListaSuspensa obritatorio ={true} label= "Time"  itens={times}/>
-                <Botao> Criar Card</Botao>
+                <ListaSuspensa obritatorio={true} label= "Time" itens={times}/>
+                <Botao> 
+                    Criar Card
+                </Botao>
             </form>
         </section>
     )

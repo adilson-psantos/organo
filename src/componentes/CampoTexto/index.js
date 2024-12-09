@@ -6,7 +6,7 @@ const CampoTexto = (props) => {
     let valor = 'Guilherme Silveira'
 
     const aoDigitado = (evento) => {
-        valor - evento.target.value
+        valor = evento.target.value
         console.log(valor)
     }
 
