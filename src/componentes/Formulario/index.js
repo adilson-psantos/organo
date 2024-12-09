@@ -1,20 +1,30 @@
 import CampoTexto from '../CampoTexto'
-import './Formulario.css'
+import ListaSuspensa from '../ListaSuspensa'
+import '../Formulario'
 
 const Formulario = () => {
-    return(
-        <section className='formulario'>
+
+    const times = [
+        'Programação',
+        'Front-End',
+        'Data Science',
+        'Devops',
+        'UX Design',
+        'Mobile',
+        'Inovação e Gestão'
+    ]
+    
+      return(
+        <section className="formulario">
             <form>
                 <h2>Preencha os dados para criar o card do Colaborador</h2>
                 <CampoTexto label="Nome" placeholder="Digite seu nome"/>
                 <CampoTexto label="Cargo" placeholder = "Digite seu cargo"/>
                 <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem"/>
-                <CampoTexto label="Time" placeholder="Digite o seu time"/>
+                <ListaSuspensa label= "Time" itens={times}/>
             </form>
         </section>
-
     )
-
 }
 
 export default Formulario
