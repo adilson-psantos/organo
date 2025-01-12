@@ -8,8 +8,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
             <input onChange={evento => mudarCor(evento.target.value,time.id)} value={cor} type='color' className='input-cor'/>
             <h3 style={{ borderColor: time.cor }}>{time.id}</h3>
             <div className='colaboradores'>
-                {colaboradores.map((colaborador, indice) => {
-                    
+                {colaboradores.map((colaborador, indice) => {                    
                     return <Colaborador key={indice} colaborador={colaborador} corDeFundo={time.cor} aoDeletar={aoDeletar} />;
                 })}
             </div>
